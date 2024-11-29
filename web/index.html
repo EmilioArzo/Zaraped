@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>10_usuario</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style> 
+            .custom-thead th { 
+                background-color: #E73F0B;
+                color: #ffffff; 
+            } 
+            .custom-card-header { 
+                background-color: #E73F0B; 
+            }
+            .custom-btn1 { 
+                background-color: #BBCF4A; /* BOTON DE REGISTRAR */ 
+                border-color: #000000; 
+            } 
+            .custom-btn1:hover {
+                background-color: #A2B340; /* BOTON DE REGISTRAR */ 
+                border-color: #000000; 
+            }
+            .custom-btn2 { 
+                background-color: #f1c40f; /* BOTON DE ACTUALIZAR */ 
+                border-color: #000000; 
+            } 
+            .custom-btn2:hover {
+                background-color: #A2B340; /* BOTON DE ACTUALIZAR */ 
+                border-color: #000000; 
+            } 
+            .custom-btn3 { 
+                background-color: #e73f0b; /* BOTON DE ELIMINAR */ 
+                border-color: #000000;  
+            } 
+            .custom-btn3:hover {
+                background-color: #A2B340; /* BOTON DE ELIMINAR */ 
+                border-color: #000000; 
+            } 
+            .table {
+                background-color: #ffffff;  
+                color: #000000; 
+            } 
+            body {
+                background-image: 
+                linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ),url("../imagenes/img-fondo-pagina.png"); 
+                background-size: cover; 
+                font-family: "Ubuntu", helvetica; 
+                background-position: center;
+            }
+            
+            .center-input-container {
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+            } 
+            
+            .center-input {
+                width: 300px; 
+                border: 2px solid black; 
+                border-radius: 10px; 
+                padding: 4px; 
+            }
+            </style>
+</head>
+
+
+<body>
+    <div class="container my-5">
+        <div class="card">
+            <div class="card-header custom-card-header text-white">
+              <h2 class="mb-0">Cliente</h2>   
+            </div>
+            <div class="card-body">
+                <form id="Form">
+                   <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" class="form-control" id="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="number" class="form-control" id="ciudad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreUsuario">Nombre Usuario</label>
+                        <input type="text" class="form-control" id="nombreUsuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasenia">Contraseña</label>
+                        <input type="password" class="form-control" id="contrasenia" required>
+                    </div> <br> 
+                    <br><br>
+                    <button type="button" class="btn custom-btn1">Registrar</button>
+                    <button type="button" class="btn custom-btn2">Modificar</button>
+                    <button type="button" class="btn custom-btn3">Eliminar</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        
+        <div class="container my-5">
+        <div class="card mt-5">
+            <div class="">
+            <input type="search" class="form-control center-input" id="Input5">
+            </div>
+     
+            <table class="table table-striped">
+    <thead class="custom-thead">
+        <tr id="table-headers">
+
+        </tr>
+    </thead>
+    <tbody id="table-body">
+
+    </tbody>
+</table>
+
+        </div>
+    </div>
+    <script src="JSS.js" type="text/javascript"></script>
+</body>
+</html>
