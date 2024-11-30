@@ -66,4 +66,15 @@ public class restCliente extends Application {
         Gson gson = new Gson();
         return Response.ok(gson.toJson(clientes)).build();
     }
+@Path("ciudades")
+@GET
+@Produces(MediaType.APPLICATION_JSON)
+public Response obtenerCiudades() {
+    controladorCliente ctrl = new controladorCliente();
+    List<modelo.modeloCiudad> ciudades = ctrl.obtenerCiudades();
+
+    Gson gson = new Gson();
+    return Response.ok(gson.toJson(ciudades)).build();
+}
+
 }
