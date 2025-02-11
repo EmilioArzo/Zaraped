@@ -1,0 +1,58 @@
+
+
+            .custom-thead th { 
+                background-color: #E73F0B;
+                color: #ffffff; 
+            } 
+            .custom-card-header { 
+                background-color: #E73F0B; 
+            }
+            .custom-btn1 { 
+                background-color: #BBCF4A; /* BOTON DE REGISTRAR */ 
+                border-color: #000000; 
+            } 
+            .custom-btn1:hover {
+                background-color: #A2B340; /* BOTON DE REGISTRAR */ 
+                border-color: #000000; 
+            }
+            .custom-btn2 { 
+                background-color: #f1c40f; /* BOTON DE ACTUALIZAR */ 
+                border-color: #000000; 
+            } 
+            .custom-btn2:hover {
+                background-color: #A2B340; /* BOTON DE ACTUALIZAR */ 
+                border-color: #000000; 
+            } 
+            .custom-btn3 { 
+                background-color: #e73f0b; /* BOTON DE ELIMINAR */ 
+                border-color: #000000;  
+            } 
+            .custom-btn3:hover {
+                background-color: #A2B340; /* BOTON DE ELIMINAR */ 
+                border-color: #000000; 
+            } 
+            .table {
+                background-color: #ffffff;  
+                color: #000000; 
+            } 
+            body {
+                background-image: 
+                linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) ),url("../imagenes/img-fondo-pagina.png"); 
+                background-size: cover; 
+                font-family: "Ubuntu", helvetica; 
+                background-position: center;
+            }
+            
+            .center-input-container {
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+            } 
+            
+            .center-input {
+                width: 300px; 
+                border: 2px solid black; 
+                border-radius: 10px; 
+                padding: 4px; 
+            }
+            

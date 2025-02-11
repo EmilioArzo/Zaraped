@@ -1,0 +1,484 @@
+/* PALETA DE COLORES A
+    CONTAINERS PRINCIPALES - #A11F0C rojo
+    CONTAINERS SECUNDARIOS - #E73F0B naranja
+    BOTONES                - #BBCF4A  verde claro
+    FONDO DE LOS MENÚS    - #F4EC6A golden delicious
+*/
+
+/* fuentes de letra 
+    Arial black bold - titulos
+    Comic Sans MS - Menús
+    Platillos - Arial Black
+*/
+
+html{
+    /* pa que se vea mas cool */
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 5px;
+}
+
+*{
+    transition: 0.4s;
+}
+
+body{
+    /* imagen de fondo */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+        
+    ),url("imagenes/img-fondo-pagina.png");/* Color obscuro al fondo e imagen de fondo */
+    background-size: cover; /* cubrir la pantalla */
+    font-family: Arial, Helvetica, sans-serif; /* fuente de letra */
+    display: flex; /* flexblox para responsive */
+    justify-content: center; /* centrado horizontal */
+    align-items: center; /* centrado vertical */
+    background-position: center; /* mentener la imagen de fondo centrada */
+}
+
+
+/*                                               ESTILOS PARA INDEX                                  */
+
+/* container del logo principal */
+.logo{
+    position: absolute;
+    top: -4px;
+    transform:translateX(25%);
+    z-index:4;
+    min-width: 280px;
+}
+/* imagen del container (logo del zarape) */
+.logo img{
+    width: 100%;
+    height: auto;
+    max-width: 155px;
+    filter: drop-shadow(0px 0px 2px hsl(0, 15%, 95%));
+}
+
+/* container-naranja- contenedor index*/
+.container-naranja-index{
+    position: relative;
+    width: 70vw;
+    min-width: fit-content;
+    height: 78vh;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 4px 4px 0;
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,9);
+    background: linear-gradient(230deg, #250808 , #f82504 98%,#0f030398);   
+    z-index: 3;
+}
+
+/* IMAGEN TRANSPARENTE EN INDEX */
+.container-naranja-index::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("./imagenes/img-fondo-index.png");
+    opacity: .1;
+}
+/* contenedor amarillo base ( se usa en todos )*/
+.container-base-amarillo{
+    position: relative;
+    width: 95%;
+    height: 70%;
+    justify-content: flex-start;
+    transition: 0.4s;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 4px 4px 4px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,9);
+    background: #f7da72;  
+    box-sizing: border-box
+}
+
+/* contenedor del h1 "Bienvenida" index*/
+.bienvenida{
+    margin: 0;
+    top:-100%;
+    text-align: initial;
+    z-index: 2;    
+}
+
+/* texto h1 "Bienvenida" index */
+.bienvenida h1{
+    width: 6em;
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial;
+    display: flex;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* contenedor que tiene dentro los dos nav (botones) del index*/
+.container-botones-index{
+    padding: 0;
+    width: 60vw;
+    height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+/* estilos para los botones del index */
+.container-botones-index a{
+    flex: 1 1 auto;
+    font-size: calc(16px + 1vw);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    background-color: #BBCF4A ;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #000;
+    max-width: calc(200px + 2vw);
+    height: fit-content;
+    margin-bottom: 45px;
+    margin-left: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#####           ESTILOS PARA INICIAR SESION  02-iniciar-sesion.html           #####                   */
+
+/* contenedor rojo base ( se usa en todos, es diferente al del index )*/
+.container-base-naranja{
+    position: relative;
+    width: 70vw;
+    min-width: fit-content;
+    height: 78vh;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 4px 4px 0;
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,9);
+    background: linear-gradient(230deg, #250808 , #f82504 98%,#0f030398);   
+   
+}
+
+
+/* Titulo rojo vino que esta a la mitad del div amarillo */
+.container-base-amarillo h1{
+    flex: 1 1 100px;
+    width: 50vw;
+    height: fit-content; /* Altura del título */
+    box-sizing: border-box; /* Caja de borde */
+    display: inline-flex; /* Elemento en línea */
+    padding: 10px; /* Relleno interno */
+    margin: 0; /* Margen cero */
+    color: white; /* Color del texto */
+    background-color: #A11F0C; /* Color de fondo */
+    border-radius: 100px; /* Borde redondeado */
+    line-height: 1; /* Altura de línea */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-bottom: 4px solid black; /* Borde inferior */
+    position: absolute; /* Posición absoluta */
+    top: -25px; /* Desde arriba */
+    left: 50%; /* Desde la izquierda */
+    transform: translateX(-50%); /* Centrado horizontal */
+    text-align: center;
+    font-size: calc(20px - 1%);
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* contiene al div que maneja el forms  ( se usa como guia para centrar )*/
+#formulario-iniciar-sesion{
+    width: 100%; 
+    height: 95%;  
+    box-sizing: border-box; 
+    /* border: 2px solid #0153f6;   */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+} 
+#formulario-iniciar-sesion .datos-form{
+    width: 100%;
+    width: 30vh;
+    max-width: 50vw;
+    height: 90%;
+    box-sizing: border-box ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap; 
+    flex: 1 1 100px;
+}
+
+.datos-form .usuario, .contraseña{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    /* border: 1px solid #2701ff;  */
+   
+} 
+
+/* estilos generales para las imagenes */
+#formulario-iniciar-sesion img {
+    /* border:1px solid #000;  */
+    max-width: 10%;
+    display: flex; 
+}
+/* estilo particular para el icono de contraseña */
+#formulario-iniciar-sesion .contraseña img {
+    width: 21%;
+    display: flex;  
+}
+
+
+#formulario-iniciar-sesion label{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#formulario-iniciar-sesion .usuario input, .contraseña input{
+    width: 78%;
+    max-width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    color: #000000;
+    border-radius: 7px;
+    border: 1.5px solid #000000;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 4px 4px 4px 4px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 6px #000; 
+} 
+
+#formulario-iniciar-sesion .usuario input:hover, .contraseña input:hover{
+    background-color: rgb(162, 162, 162);
+    border: none;
+    font:solid #000;
+} 
+
+/* boton de "ingresar" (02-iniciarsesion-html) */
+#formulario-iniciar-sesion button {
+    width: fit-content;
+    max-width: 125px;
+    flex: 1 1 100px;
+    font-size: calc(13px + 1vw);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #BBCF4A ;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    top: 5%;
+}
+
+#formulario-iniciar-sesion button:hover{
+    background-color: #9cad3e;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##########ESTILOS PARA 03-REGISTRAR USUARIO */
+#formulario-registrar-usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 100%;
+    height: 100%;
+}
+
+
+#formulario-registrar-usuario .datos-form{
+    flex: 1 1 30px;
+    background-color: hsl(194, 72%, 40%);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid #000;
+}
+ 
+#formulario-registrar-usuario .id, .usuario, .contrasenia{
+    flex: 1 1 25px;
+    width: 20vw;
+    height: 20vh;
+    /* background-color: #f13d3dcc; */
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 3px;
+    margin: 2px; 
+    box-sizing: border-box;
+    
+} 
+
+#formulario-registrar-usuario .datos-form .id .icon {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fcfcfc;
+    margin: 5px;
+    padding: 0;
+} 
+
+#formulario-registrar-usuario .datos-form .usuario .icon{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fcfcfc;
+    margin: 5px;
+    padding: 0;
+} 
+
+#formulario-registrar-usuario .datos-form .contrasenia .icon{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fcfcfc;
+    margin: 5px;
+    padding: 0;
+} 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################## ESTILOS PARA 04_MENU.HTML ###############################3 */
+.nav-menu{
+    width: 100%;
+    height: 90%;
+    max-height: 99%;
+    max-width: 720px;
+    min-width: 420px;
+    border: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;  
+    margin-top: 20px;
+}
+
+.nav-menu a {
+    width: 95%;
+    height: 40%;
+    max-width: 32%;
+    max-height: 85%; 
+    border: 1px solid #000000f3;
+    margin: 10px;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.nav-menu img{
+    width: 50%;
+    /* border:2px solid #c61717; */
+    display: flex;margin: 0;
+    filter: drop-shadow(0px 0px 2px hsl(0, 15%, 95%));
+}
+
+.nav-menu p{
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+

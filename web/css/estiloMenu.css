@@ -1,0 +1,148 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1 dic 2024, 7:59:45 p.m.
+    Author     : Emilio
+*/
+
+/* ----------------------Estilos menú asíncrono----------------------- */
+/* Contenedor del menú con fondo */
+#menu-container {
+  display: flex;
+  align-items: center;
+  
+  background-color: #e73f0b; /* Color de fondo personalizado */
+  color: white; /* Texto blanco para contraste */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+#menu-logo {
+  height: 80px;
+  cursor: pointer;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: white; /* Aseguramos que el texto sea visible */
+}
+
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto hover translúcido */
+}
+
+body {
+  margin-top: 70px;
+  padding: 20px;
+}
+/* ----------------------Estilos menú asíncrono----------------------- */
+/* Contenedor del menú con fondo */
+#menu-container {
+  display: flex;
+  align-items: center;
+  background-color: #e73f0b; /* Color de fondo personalizado */
+  color: white; /* Texto blanco para contraste */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+#menu-logo {
+  height: 80px;
+  cursor: pointer;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: white; /* Aseguramos que el texto sea visible */
+}
+
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto hover translúcido */
+}
+
+body {
+  margin-top: 70px;
+  padding: 20px;
+}
+//------------------------------------------------------
+
+#menu-logo {
+  height: 80px;
+  margin: 0px;
+}
+
+#menu-btn {
+  background-color: #ce1c10;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+
+
+#menu-items {
+    display: flex;
+  position: absolute;
+  top: 100px; /* Ajuste según la altura del header */
+  left: 0;
+/*  background: linear-gradient(to bottom, #ce1c10, #b9b700);  Fondo del menú desplegable */
+background: linear-gradient(to bottom, #ce1c10, rgba(0, 124, 224, 0));
+width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+#menu-items li {
+  display: inline-block; /* Hacer que los elementos de la lista estén en línea */
+}
+
+
+#menu-items button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
